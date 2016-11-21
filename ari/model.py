@@ -174,7 +174,7 @@ class BaseObject(object):
             :param event: Event.
             """
             if isinstance(objects, dict):
-                if self.id in [c.id for c in objects.values()]:
+                if self.id in [c.id for c in list(objects.values())]:
                     fn(objects, event, *args, **kwargs)
             else:
                 if self.id == objects.id:

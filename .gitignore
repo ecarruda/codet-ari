@@ -6,3 +6,6 @@ dist/
 nosetests.xml
 build
 .idea/
+.idea/workspace.xml
+
+*.bak
