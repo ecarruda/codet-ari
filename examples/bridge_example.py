@@ -22,10 +22,10 @@ bridges = [b for b in client.bridges.list() if
            b.json['bridge_type'] == 'holding']
 if bridges:
     bridge = bridges[0]
-    print "Using bridge %s" % bridge.id
+    print("Using bridge %s" % bridge.id)
 else:
     bridge = client.bridges.create(type='holding')
-    print "Created bridge %s" % bridge.id
+    print("Created bridge %s" % bridge.id)
 
 
 def on_enter(bridge, ev):

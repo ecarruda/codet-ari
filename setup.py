@@ -9,12 +9,12 @@ import os
 from setuptools import setup
 
 setup(
-    name="ari",
+    name="ari_codet",
     version="0.1.3",
     license="BSD 3-Clause License",
     description="Library for accessing the Asterisk REST Interface",
-    long_description=open(os.path.join(os.path.dirname(__file__),
-                                       "README.rst")).read(),
+    long_description=open(os.path.join(os.path.dirname(__file__),  "README.md")).read(),
+    setup_requires=['setuptools_scm'],
     author="Digium, Inc.",
     author_email="dlee@digium.com",
     url="https://github.com/asterisk/asterisk_rest_libraries",

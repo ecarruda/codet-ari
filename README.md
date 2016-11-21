@@ -1,3 +1,5 @@
+**ORIGINAL REP :** [asterisk/ari-py](https://github.com/asterisk/ari-py.git) 
+
 About
 -----
 
@@ -13,13 +15,13 @@ Install from source using the ``setup.py`` script.
 
 ::
 
-    $ sudo ./setup.py install
+    $ pip install ari_codet
 
 
 API
 ===
 
-An ARI client can be created simply by the ``ari.connect`` method. This will
+An ARI client can be created simply by the ``codet_ari.connect`` method. This will
 create a client based on the Swagger API downloaded from Asterisk.
 
 The API is modeled into the Repository Pattern, as you would find in Domain
