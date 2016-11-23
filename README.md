@@ -21,7 +21,7 @@ Install from source using the ``setup.py`` script.
 API
 ===
 
-An ARI client can be created simply by the ``codet-ari.connect`` method. This will
+An ARI client can be created simply by the ``ari.connect`` method. This will
 create a client based on the Swagger API downloaded from Asterisk.
 
 The API is modeled into the Repository Pattern, as you would find in Domain
