@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+import codecs
 
 import ari
 import httpretty
@@ -21,7 +22,8 @@ class ClientTest(AriTestCase):
     def test_docs(self):
         fp = urllib.request.urlopen("http://ari.py/ari/api-docs/resources.json")
         try:
-            actual = json.load(fp)
+            reader = codecs.getreader("utf-8")
+            actual = json.load(reader(fp))
             self.assertEqual(self.BASE_URL, actual['basePath'])
         finally:
             fp.close()
